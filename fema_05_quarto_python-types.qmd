@@ -79,7 +79,9 @@ Run the following code chunk to test whether you have the same answer as the sol
 #| label: 'compare'
 
 # If your answer is correct, the comparison should return an empty DataFrame.
-disasters.compare(solution)
+# Decimal columns are rounded so tiny floating-point differences between computers don't count.
+decimals = {col: 6 for col in solution.select_dtypes('float').columns}
+disasters.round(decimals).compare(solution.round(decimals))
 ```
 
 ### Part 3 - The role of category order in visualizations
