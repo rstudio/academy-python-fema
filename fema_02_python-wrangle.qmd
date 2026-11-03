@@ -6,7 +6,7 @@ format: html
 
 This week, you learned about several more pandas methods and attributes. These functions help you work with the columns in your data set.
 
-You'll use these skills to add a new column that contains the cumulative total financial Individual Housing Program (IHP) awarded for a subset of the disaster declarations in the state of New York.
+You'll use these skills to add a new column that contains the cumulative total financial Individuals and Households Program (IHP) awarded for a subset of the disaster declarations in the state of New York.
 
 To learn more about the variables contained in the data set, refer to the data dictionary
 [here](https://rstudio.github.io/academy-python-fema/assets/disasters_dictionary.html).
@@ -28,7 +28,7 @@ rcParams.update({'savefig.bbox': 'tight'}) # Keeps plotnine legend from being cu
 
 ## Wrangle rows and columns
 
-In this milestone, you'll create a new column that contains the cumulative financial Individual Housing Program (IHP) awarded for a subset of the disaster declarations in the state of New York.
+In this milestone, you'll create a new column that contains the cumulative financial Individuals and Households Program (IHP) awarded for a subset of the disaster declarations in the state of New York.
 
 ## Recreation
 

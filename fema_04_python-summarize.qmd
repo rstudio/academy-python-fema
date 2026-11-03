@@ -48,7 +48,7 @@ Work in the code chunk below:
 
 ### Part 2 - Compute total eligible applicants
 
-Run the code below to compute the total number of applicants deemed eligible for the Individual Housing Program for qualifying disasters (i.e., disasters for which the IHP program was declared) that occurred in FEMA region 1.
+Run the code below to compute the total number of applicants deemed eligible for the Individuals and Households Program for qualifying disasters (i.e., disasters for which the IHP program was declared) that occurred in FEMA region 1.
 
 ```{python}
 #| label: 'region-1-eligible'

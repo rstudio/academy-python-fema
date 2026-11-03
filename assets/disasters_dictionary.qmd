@@ -15,7 +15,9 @@ This project uses an OpenFEMA dataset provided by FEMA called [Disaster Declarat
 
 The data you will work with for this project contains a *subset* of variables from the original Disaster Declaration Summaries data. You can download the full original data set and see the complete set of data definitions [here](https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2).
 
-This dataset also includes summary counts derived from the [Individuals and Households Program - Valid Registrations - v1](https://www.fema.gov/openfema-data-page/individuals-and-households-program-valid-registrations-v1) dataset. 
+This dataset also includes summary counts derived from the [Individuals and Households Program - Valid Registrations - v1](https://www.fema.gov/openfema-data-page/individuals-and-households-program-valid-registrations-v1) dataset.
+
+Federal Emergency Management Agency (FEMA), OpenFEMA Datasets: Disaster Declarations Summaries - v2 and Individuals and Households Program - Valid Registrations - v1. Retrieved from https://www.fema.gov/about/openfema/data-sets in early 2025; the data includes declarations through January 15, 2025. This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
 
 
 ### Variables: `disasters.csv`
@@ -24,7 +26,7 @@ This dataset also includes summary counts derived from the [Individuals and Hous
 
 `disaster_number`: Sequentially assigned number used to designate an event or incident declared as a disaster
 
-`state`: The name or phrase describing the U.S. state, district, or territory
+`state`: The two-letter USPS code of the U.S. state, district, territory, or freely associated state (for example `NY`, `DC`, `PR`, `GU`)
 
 `declaration_type`: Two character code that defines if this is a major disaster (`DR`), fire management (`FM`), or emergency declaration (`EM`)
 
@@ -66,7 +68,7 @@ This dataset also includes summary counts derived from the [Individuals and Hous
 
 `designated_incident_types`: A comma-separated list of incident types designated for the disaster. The primary incident type is described in the `incident_type` field. Codes are: 0: Not applicable; 1: Explosion; 2: Straight-Line Winds; 3: Tidal Wave; 4: Tropical Storm; 5: Winter Storm; 8: Tropical Depression; A: Tsunami; B: Biological; C: Coastal Storm; D: Drought; E: Earthquake; F: Flood; G: Freezing; H: Hurricane; I: Terrorist; J: Typhoon; K: Dam/Levee Break; L: Chemical; M: Mud/Landslide; N: Nuclear; O: Severe Ice Storm; P: Fishing Losses; Q: Crop Losses; R: Fire; S: Snowstorm; T: Tornado; U: Civil Unrest; V: Volcanic Eruption; W: Severe Storm; X: Toxic Substances; Y: Human Cause; Z: Other	
 
-`n_ihp_eligible`: Number of applicants eligible for the Individual Housing Program (IHP) (i.e, received an HA and/or ONA award). 
+`n_ihp_eligible`: Number of applicants eligible for the Individuals and Households Program (IHP) (i.e, received an HA and/or ONA award). 
 
 `total_ihp_awarded`: Total financial IHP award for Housing Assistance (HA) and/or Other Needs Assistance (ONA) in U.S. dollars.
 

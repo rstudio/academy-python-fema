@@ -2199,12 +2199,13 @@ vertical-align: -.125em;
 <h3 class="anchored" data-anchor-id="disclaimers">Disclaimers</h3>
 <p>The data you will work with for this project contains a <em>subset</em> of variables from the original Disaster Declaration Summaries data. You can download the full original data set and see the complete set of data definitions <a href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2">here</a>.</p>
 <p>This dataset also includes summary counts derived from the <a href="https://www.fema.gov/openfema-data-page/individuals-and-households-program-valid-registrations-v1">Individuals and Households Program - Valid Registrations - v1</a> dataset.</p>
+<p>Federal Emergency Management Agency (FEMA), OpenFEMA Datasets: Disaster Declarations Summaries - v2 and Individuals and Households Program - Valid Registrations - v1. Retrieved from https://www.fema.gov/about/openfema/data-sets in early 2025; the data includes declarations through January 15, 2025. This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency’s website(s).</p>
 </section>
 <section id="variables-disasters.csv" class="level3">
 <h3 class="anchored" data-anchor-id="variables-disasters.csv">Variables: <code>disasters.csv</code></h3>
 <p><code>fema_declaration_string</code>: Agency standard method for uniquely identifying Stafford Act declarations - Concatenation of declaration type, disaster number and state code. Ex: DR-4393-NC</p>
 <p><code>disaster_number</code>: Sequentially assigned number used to designate an event or incident declared as a disaster</p>
-<p><code>state</code>: The name or phrase describing the U.S. state, district, or territory</p>
+<p><code>state</code>: The two-letter USPS code of the U.S. state, district, territory, or freely associated state (for example <code>NY</code>, <code>DC</code>, <code>PR</code>, <code>GU</code>)</p>
 <p><code>declaration_type</code>: Two character code that defines if this is a major disaster (<code>DR</code>), fire management (<code>FM</code>), or emergency declaration (<code>EM</code>)</p>
 <p><code>declaration_date</code>: Date the disaster was declared</p>
 <p><code>fy_declared</code>: Fiscal year in which the disaster was declared</p>
@@ -2225,7 +2226,7 @@ vertical-align: -.125em;
 <p><code>declaration_request_number</code>: Number assigned to the declaration request</p>
 <p><code>incident_id</code>: Unique identifier for an incident. Incidents are events that may or may not become declared disasters.</p>
 <p><code>designated_incident_types</code>: A comma-separated list of incident types designated for the disaster. The primary incident type is described in the <code>incident_type</code> field. Codes are: 0: Not applicable; 1: Explosion; 2: Straight-Line Winds; 3: Tidal Wave; 4: Tropical Storm; 5: Winter Storm; 8: Tropical Depression; A: Tsunami; B: Biological; C: Coastal Storm; D: Drought; E: Earthquake; F: Flood; G: Freezing; H: Hurricane; I: Terrorist; J: Typhoon; K: Dam/Levee Break; L: Chemical; M: Mud/Landslide; N: Nuclear; O: Severe Ice Storm; P: Fishing Losses; Q: Crop Losses; R: Fire; S: Snowstorm; T: Tornado; U: Civil Unrest; V: Volcanic Eruption; W: Severe Storm; X: Toxic Substances; Y: Human Cause; Z: Other</p>
-<p><code>n_ihp_eligible</code>: Number of applicants eligible for the Individual Housing Program (IHP) (i.e, received an HA and/or ONA award).</p>
+<p><code>n_ihp_eligible</code>: Number of applicants eligible for the Individuals and Households Program (IHP) (i.e, received an HA and/or ONA award).</p>
 <p><code>total_ihp_awarded</code>: Total financial IHP award for Housing Assistance (HA) and/or Other Needs Assistance (ONA) in U.S. dollars.</p>
 <p><code>n_ha_eligible</code>: Number of applicants that were eligible for the Housing Assistance program.</p>
 <p><code>total_ha_awarded</code>: Total amount awarded for Housing Assistance under IHP in U.S. dollars.</p>
